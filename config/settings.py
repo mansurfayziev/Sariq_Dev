@@ -1,4 +1,5 @@
 
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -9,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-yh%jvk4*-m@k!aov5h9h^l(yw@e@+==v&m(9r^gx$_i16d0+)3'
+SECRET_KEY = 'django-insecure-a$zz*43d1prrn)^ho8(oyc#$0e54#+w69m-iw#w+clyxhw$!ju'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -26,7 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pagesapp',
+    'main',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -93,7 +95,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'UTC'
 
@@ -111,3 +113,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL='home'
+LOGOUT_REDIRECT_URL='home'
